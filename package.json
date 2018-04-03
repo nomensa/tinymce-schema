@@ -1,7 +1,7 @@
 {
   "name": "microdata",
   "version": "0.0.1",
-  "description": "microdata TinyMCE plugin repo",
+  "description": "Ability to add microdata to elements inside TinyMCE",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js --progress --open --inline",
     "lint": "eslint 'src/**/*.js'",
