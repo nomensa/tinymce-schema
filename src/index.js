@@ -31,3 +31,7 @@ tinymce.PluginManager.add('schema', function (editor, url) {
     }
   });
 });
+
+exports.printMsg = function() {
+    console.log("This is a message from the demo package");
+}
