@@ -1,14 +1,14 @@
 import plugin from './plugin';
 
-tinymce.PluginManager.add('microdata', function (editor, url) {
+tinymce.PluginManager.add('schema', function (editor, url) {
 
-  editor.addButton('microdata', {
-    title: 'Add microdata',
-    text: 'Add microdata',
+  editor.addButton('schema', {
+    title: 'Add schema',
+    text: 'Add schema',
     onclick: function () {
       var bodyOptions = {
         type: 'textbox',
-        name: 'microdata',
+        name: 'schema',
         label: 'Schema property:'
       };
 
@@ -18,12 +18,12 @@ tinymce.PluginManager.add('microdata', function (editor, url) {
         body: bodyOptions,
         onsubmit: function(event) {
           /*
-           * Wraps selected content in a span that contains the microdata
-           * Constraints: Only works for itemprop microdata.
+           * Wraps selected content in a span that contains the schema
+           * Constraints: Only works for itemprop schema.
            */
           var selectedContent = tinymce.activeEditor.selection.getContent(),
-            microdataValue = event.data.microdata,
-            newMarkup = '<span itemprop="' + microdataValue + '">' + selectedContent + '</span>';
+              schemaValue = event.data.schema,
+              newMarkup = '<span itemprop="' + schemaValue + '">' + selectedContent + '</span>';
 
           tinymce.activeEditor.selection.setContent(newMarkup);
         }
