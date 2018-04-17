@@ -1,6 +1,6 @@
 {
   "name": "tinymce-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ability to add schema to elements inside TinyMCE",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js --progress --open --inline",
