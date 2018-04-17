@@ -1,6 +1,16 @@
 # Schema TinyMCE Plugin
 This plugin helps the content editor add Schema values to content inside the WYISIWYG editor.
 
+## Installation
+1. Via NPM:
+```
+$ npm i tinymce-schema
+```
+2. Via Github:
+```
+$ git clone https://github.com/nomensa/tinymce-schema
+```
+
 ## User workflow
 1. Highlight text;
 2. Press the "Add schema" button;
