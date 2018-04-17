@@ -1,5 +1,5 @@
 {
-  "name": "schema",
+  "name": "tinymce-schema",
   "version": "1.0.0",
   "description": "Ability to add schema to elements inside TinyMCE",
   "scripts": {
